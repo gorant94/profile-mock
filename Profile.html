@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Профіль компанії</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      background: url("https://cabinet.smida.gov.ua/assets/header.webp") no-repeat center center fixed;
+      background-size: cover;
+      backdrop-filter: blur(4px);
+    }
+
+    .overlay {
+      background-color: rgba(255, 255, 255, 0.55);
+      min-height: 100vh;
+      padding-bottom: 40px;
+    }
+
+    .navbar-fixed {
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    nav {
+      height: 64px;
+      background: #19406b;
+      box-shadow: none;
+    }
+
+    .nav-wrapper {
+      display: flex;
+      align-items: center;
+      padding-left: 15px;
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+      font-size: 1.4rem;
+    }
+
+    .brand-logo img {
+      height: 32px;
+      vertical-align: middle;
+    }
+
+    .brand-logo span {
+      color: white;
+      font-size: 32px;
+    }
+
+    .container {
+      margin-top: 30px;
+    }
+
+    .card-content h6 {
+      margin-top: 0;
+    }
+
+    .status-chip {
+      margin-top: 10px;
+    }
+
+    table.striped > tbody > tr:nth-child(odd) {
+      background-color: rgb(24 64 107 / 10%);
+    }
+
+    .collapsible-header {
+      font-weight: bold;
+    }
+
+    .collapsible-body {
+      background: rgb(255, 255, 255, 0.7);
+    }
+
+    .blue-text {
+      color: #19406b !important;
+    }
+  </style>
+</head>
+<body>
+<div class="overlay">
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="/" class="brand-logo">
+          <img src="https://cabinet.smida.gov.ua/assets/ukr_coat_of_arms.webp" alt="SMIDA">
+          <span>SMIDA</span>
+        </a>
+      </div>
+    </nav>
+  </div>
+
+  <div class="container">
+    <h4 class="blue-text">Профіль компанії</h4>
+
+    <ul class="collapsible expandable">
+      <li class="active">
+        <div class="collapsible-header"><i class="material-icons">business</i>00017733 — ПРИВАТНЕ АКЦІОНЕРНЕ ТОВАРИСТВО "СУДНОПЛАВНА КОМПАНІЯ УКРРІЧФЛОТ"</div>
+        <div class="collapsible-body">
+          <div style="display: inline">
+            <div>
+              <strong>Статус:</strong>
+            </div>
+            <div>
+              <span class="chip green white-text" style="display: inline-flex; align-items: center; margin-bottom: 0">
+                <i class="material-icons" style="font-size: 18px; margin-right: 4px;">check_circle</i>Зареєстровано
+              </span>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="active">
+        <div class="collapsible-header"><i class="material-icons">info</i>Інформація про учасника</div>
+        <div class="collapsible-body">
+          <table class="striped">
+            <tbody>
+            <tr>
+              <td><strong>Скорочена назва</strong></td>
+              <td>АСК "УКРРІЧФЛОТ"</td>
+            </tr>
+            <tr>
+              <td><strong>ЄДРПОУ</strong></td>
+              <td>17733</td>
+            </tr>
+            <tr>
+              <td><strong>Юридична адреса</strong></td>
+              <td>Україна, 04071, місто Київ, ВУЛИЦЯ ЕЛЕКТРИКІВ, будинок 8</td>
+            </tr>
+            <tr>
+              <td><strong>Зареєстрований</strong></td>
+              <td>Подільська районна в місті Києві державна адміністрація, 06.08.1993</td>
+            </tr>
+            <tr>
+              <td><strong>КОАТУУ</strong></td>
+              <td>8038500000</td>
+            </tr>
+            <tr>
+              <td><strong>Основний вид діяльності</strong></td>
+              <td>50.20 — Вантажний морський транспорт</td>
+            </tr>
+            <tr>
+              <td><strong>Додаткові види діяльності (топ-3)</strong></td>
+              <td>30.11, 01.64, 08.12</td>
+            </tr>
+            <tr>
+              <td><strong>Інші КВЕДи</strong></td>
+              <td>20.11, 24.33, 25.11, ...</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </li>
+
+      <li class="active">
+        <div class="collapsible-header"><i class="material-icons">update</i>Історія змін реєстраційної інформації</div>
+        <div class="collapsible-body">
+          <table class="striped">
+            <thead>
+            <tr>
+              <th>Дата</th>
+              <th>Тип зміни</th>
+              <th>Було</th>
+              <th>Стало</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>05.02.2019</td>
+              <td>Керівник</td>
+              <td>Москаленко Дмитро Олегович</td>
+              <td>Борисенко Олександр Миколайович</td>
+            </tr>
+            <tr>
+              <td>12.09.2021</td>
+              <td>Юридична адреса</td>
+              <td>м. Київ, вул. Сагайдачного, 12</td>
+              <td>м. Київ, вул. Електриків, 8</td>
+            </tr>
+            <tr>
+              <td>03.03.2023</td>
+              <td>Назва компанії</td>
+              <td>ПАТ "Укррічфлот"</td>
+              <td>ПРАТ "Судноплавна компанія УКРРІЧФЛОТ"</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </li>
+      <li class="active">
+        <div class="collapsible-header"><i class="material-icons">event</i>Особливі події</div>
+        <div class="collapsible-body">
+          <table class="striped">
+            <thead>
+            <tr>
+              <th>Дата</th>
+              <th>Подія</th>
+              <th>Опис</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>14.01.2020</td>
+              <td>Зміна складу посадових осіб</td>
+              <td>Звільнено фінансового директора, призначено нового — Іваненко Сергія Анатолійовича</td>
+            </tr>
+            <tr>
+              <td>05.06.2021</td>
+              <td>Утворення підрозділу</td>
+              <td>Відкрито нову філію у місті Дніпро</td>
+            </tr>
+            <tr>
+              <td>22.09.2023</td>
+              <td>Припинення представництва</td>
+              <td>Ліквідовано представництво у місті Одеса через оптимізацію структури</td>
+            </tr>
+            </tbody>
+          </table>
+          <p><strong>Охоплення:</strong> 2019–2025</p>
+        </div>
+      </li>
+      <li class="active">
+        <div class="collapsible-header"><i class="material-icons">percent</i>Інформація 5% та більше</div>
+        <div class="collapsible-body">
+          <div class="table-responsive">
+            <table class="striped centered">
+              <thead>
+              <tr>
+                <th colspan="2">Депозитарій</th>
+                <th colspan="2">Власник</th>
+                <th colspan="3">Цінні папери</th>
+                <th rowspan="2">Від загальної кількості (%)</th>
+              </tr>
+              <tr>
+                <th>ЄДРПОУ</th>
+                <th>Назва</th>
+                <th>Вид особи</th>
+                <th>Найменування, код, країна</th>
+                <th>Вид, форма випуску, існування</th>
+                <th>Номінальна вартість</th>
+                <th>Кількість</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>30370711</td>
+                <td>ПАТ "Національний депозитарій України"</td>
+                <td>Юр. особа - резидент</td>
+                <td>ТОВ "АВАЛАЙН"<br>40435565<br>УКРАЇНА</td>
+                <td>Акція проста бездокументарна іменна</td>
+                <td>0.35</td>
+                <td>15 714 181</td>
+                <td>9.1666</td>
+              </tr>
+              <tr>
+                <td>30370711</td>
+                <td>ПАТ "Національний депозитарій України"</td>
+                <td>Пайовий інвест. фонд</td>
+                <td>ПЗНВІФ «П'ятий» ТОВ "КУА «Сварог Ессет Менеджмент"<br>33499232<br>УКРАЇНА</td>
+                <td>Акція проста бездокументарна іменна</td>
+                <td>0.35</td>
+                <td>113 319 798</td>
+                <td>66.1032</td>
+              </tr>
+              <tr>
+                <td>30370711</td>
+                <td>ПАТ "Національний депозитарій України"</td>
+                <td>Юр. особа - нерезидент</td>
+                <td>CULATA LIMITED<br>КІПР</td>
+                <td>Акція проста бездокументарна іменна</td>
+                <td>0.35</td>
+                <td>16 758 491</td>
+                <td>9.7758</td>
+              </tr>
+              <tr>
+                <td>30370711</td>
+                <td>ПАТ "Національний депозитарій України"</td>
+                <td>Юр. особа - нерезидент</td>
+                <td>OLTINORO INVESTMENTS LIMITED<br>КІПР</td>
+                <td>Акція проста бездокументарна іменна</td>
+                <td>0.35</td>
+                <td>9 428 574</td>
+                <td>5.5000</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </li>
+      <li class="active">
+        <div class="collapsible-header"><i class="material-icons">show_chart</i>Біржовий курс</div>
+        <div class="collapsible-body">
+          <canvas id="stockPriceChart" height="100"></canvas>
+        </div>
+      </li>
+
+      <li class="active">
+        <div class="collapsible-header"><i class="material-icons">trending_up</i>Фінансові показники, тис. грн</div>
+        <div class="collapsible-body">
+          <table class="striped responsive-table centered">
+            <thead>
+            <tr>
+              <th>Показник</th>
+              <th>2024</th>
+              <th>2023</th>
+              <th>2022</th>
+              <th>2021</th>
+              <th>2020</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>Дохід</td>
+              <td>17 830 500 ₴</td>
+              <td>13 494 500 ₴</td>
+              <td>7 970 000 ₴</td>
+              <td>20 354 000 ₴</td>
+              <td>10 251 000 ₴</td>
+            </tr>
+            <tr>
+              <td>Чистий прибуток</td>
+              <td>27 300 ₴</td>
+              <td>2 740 900 ₴</td>
+              <td>-4 238 000 ₴</td>
+              <td>1 598 000 ₴</td>
+              <td>-523 000 ₴</td>
+            </tr>
+            <tr>
+              <td>Активи</td>
+              <td>6 470 500 ₴</td>
+              <td>7 136 500 ₴</td>
+              <td>7 275 000 ₴</td>
+              <td>8 478 000 ₴</td>
+              <td>10 201 000 ₴</td>
+            </tr>
+            <tr>
+              <td>Зобов'язання</td>
+              <td>11 520 300 ₴</td>
+              <td>11 727 000 ₴</td>
+              <td>14 641 000 ₴</td>
+              <td>11 606 000 ₴</td>
+              <td>14 927 000 ₴</td>
+            </tr>
+            <tr>
+              <td>Кількість працівників</td>
+              <td>12</td>
+              <td>12</td>
+              <td>19</td>
+              <td>19</td>
+              <td>—</td>
+            </tr>
+            </tbody>
+          </table>
+
+          <canvas id="financialChart" height="120"></canvas>
+        </div>
+      </li>
+      <li class="active">
+        <div class="collapsible-header"><i class="material-icons">list</i>Регулярна інформація</div>
+        <div class="collapsible-body">
+          <p>Оприлюднено в інформаційній базі про ринок цінних паперів. Включає всю регулярну інформацію (крім КУА).</p>
+        </div>
+      </li>
+      <li class="active">
+        <div class="collapsible-header"><i class="material-icons">attach_file</i>Завантажені файли</div>
+        <div class="collapsible-body">
+          <p>Файли пропонується завантажувати через власні сайти. Приклади джерел:</p>
+          <ul>
+            <li class="active"><a href="https://opendatabot.ua/c/05309512" target="_blank">OpenDataBot №1</a></li>
+            <li class="active"><a href="https://opendatabot.ua/c/05309512" target="_blank">OpenDataBot №2</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="active">
+        <div class="collapsible-header"><i class="material-icons">announcement</i>Особлива та інша інформація</div>
+        <div class="collapsible-body">
+          <p>Оприлюднено в інформаційній базі про ринок цінних паперів.</p>
+          <p>Типи інформації включають:</p>
+          <ul>
+            <li class="active">Проспекти емісій</li>
+            <li class="active">Звіти про підсумки випуску</li>
+          </ul>
+          <p>Файли різних типів: XML, PDF, TXT</p>
+        </div>
+      </li>
+      <li class="active">
+        <div class="collapsible-header"><i class="material-icons">table_chart</i>Інформація КУА про діяльність ІСІ</div>
+        <div class="collapsible-body">
+          <p>Оприлюднюється відповідно до вимог щодо діяльності ІСІ. Включає повідомлення, проспекти емісій та інші
+            обов’язкові звіти.</p>
+        </div>
+      </li>
+      <li class="active">
+        <div class="collapsible-header"><i class="material-icons">swap_horiz</i>Вчинені на біржі та поза нею правочини
+          щодо емісійних цінних паперів
+        </div>
+        <div class="collapsible-body">
+          <p>Відомості про правочини, укладені на біржі або поза нею, що стосуються емісійних ЦП, які мають бути
+            оприлюднені.</p>
+        </div>
+      </li>
+      <li class="active">
+        <div class="collapsible-header"><i class="material-icons">gavel</i>Правопорушення</div>
+        <div class="collapsible-body">
+          <table class="striped responsive-table centered">
+            <thead>
+            <tr>
+              <th>Номер</th>
+              <th>Тип документа</th>
+              <th>Дата</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>248-ЦА-УП-Е</td>
+              <td>Постанова про накладення санкції</td>
+              <td>15.07.2015</td>
+            </tr>
+            <tr>
+              <td>247-ЦА-УП-Е</td>
+              <td>Постанова про накладення санкції</td>
+              <td>15.07.2015</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Постанова про накладення санкції</td>
+              <td>20.01.2010</td>
+            </tr>
+            <tr>
+              <td>393</td>
+              <td>Постанова про накладення санкції</td>
+              <td>17.06.2008</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </li>
+      <li class="active">
+        <div class="collapsible-header"><i class="material-icons">archive</i>Архів</div>
+        <div class="collapsible-body">
+          <p>Може не включатися до профілю. Містить історичні дані, друковані видання тощо.</p>
+        </div>
+      </li>
+      <li class="active">
+        <div class="collapsible-header"><i class="material-icons">contacts</i>Контакти</div>
+        <div class="collapsible-body">
+          <div class="row">
+            <div class="col s12 m6">
+              <h6><strong>Державна установа «Агентство з розвитку інфраструктури фондового ринку України» (ДУ «АРІФРУ»)</strong></h6>
+              <p><i class="material-icons tiny">location_on</i> <strong>Адреса:</strong> 03150, м. Київ, вул. Антоновича, 51, офіс 1206</p>
+              <p><i class="material-icons tiny">phone</i> <strong>Телефон:</strong> (044) 287-56-70, (044) 498-38-15</p>
+              <p><i class="material-icons tiny">email</i> <strong>Email:</strong> <a href="mailto:office@smida.gov.ua">office@smida.gov.ua</a></p>
+              <p><i class="material-icons tiny">language</i> <strong>Вебсайт:</strong> <a href="https://www.smida.gov.ua" target="_blank">www.smida.gov.ua</a></p>
+            </div>
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-image">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.860804211234!2d30.51023641573099!3d50.42642657947144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce5d0f2c5e1f%3A0x31c403de47e276db!2z0LLRg9C70LjRhtGPINCh0LDRgNC40L3QsCwgNTEsINCa0LjRl9CyLCAwMzE1MA!5e0!3m2!1suk!2sua!4v1714570000000"
+                    width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var elems = document.querySelectorAll('.collapsible.expandable');
+    M.Collapsible.init(elems, {
+      accordion: false
+    });
+  });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const ctx = document.getElementById('stockPriceChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: [
+          'Травень', 'Червень', 'Липень', 'Серпень', 'Вересень', 'Жовтень',
+          'Листопад', 'Грудень', 'Січень', 'Лютий', 'Березень', 'Квітень'
+        ],
+        datasets: [{
+          label: 'Курс, грн',
+          data: [0.432, 0.445, 0.457, 0.451, 0.467, 0.460, 0.473, 0.469, 0.456, 0.442, 0.449, 0.454],
+          borderColor: '#19406b',
+          backgroundColor: 'rgba(25, 64, 107, 0.1)',
+          fill: true,
+          tension: 0.3,
+          pointRadius: 4
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            position: 'top',
+            labels: { font: { size: 14 } }
+          },
+          title: {
+            display: true,
+            text: 'Динаміка біржового курсу (останній рік)',
+            font: { size: 18 }
+          }
+        },
+        scales: {
+          y: {
+            beginAtZero: false,
+            title: {
+              display: true,
+              text: 'Курс, грн'
+            }
+          },
+          x: {
+            title: {
+              display: true,
+              text: 'Місяць'
+            }
+          }
+        }
+      }
+    });
+
+    const ctx2 = document.getElementById('financialChart').getContext('2d');
+    new Chart(ctx2, {
+      type: 'line',
+      data: {
+        labels: ['2020', '2021', '2022', '2023', '2024'],
+        datasets: [
+          {
+            label: 'Дохід',
+            data: [10251000, 20354000, 7970000, 13494500, 17830500],
+            borderColor: '#1976d2',
+            backgroundColor: 'rgba(25, 118, 210, 0.1)',
+            tension: 0.3
+          },
+          {
+            label: 'Чистий прибуток',
+            data: [-523000, 1598000, -4238000, 2740900, 27300],
+            borderColor: '#388e3c',
+            backgroundColor: 'rgba(56, 142, 60, 0.1)',
+            tension: 0.3
+          },
+          {
+            label: 'Активи',
+            data: [10201000, 8478000, 7275000, 7136500, 6470500],
+            borderColor: '#f9a825',
+            backgroundColor: 'rgba(249, 168, 37, 0.1)',
+            tension: 0.3
+          },
+          {
+            label: 'Зобов\'язання',
+            data: [14927000, 11606000, 14641000, 11727000, 11520300],
+            borderColor: '#d32f2f',
+            backgroundColor: 'rgba(211, 47, 47, 0.1)',
+            tension: 0.3
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            position: 'top'
+          },
+          title: {
+            display: true,
+            text: 'Динаміка фінансових показників (тис. грн)'
+          }
+        },
+        scales: {
+          y: {
+            beginAtZero: false,
+            ticks: {
+              callback: function(value) {
+                return value.toLocaleString('uk-UA') + ' ₴';
+              }
+            }
+          }
+        }
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
